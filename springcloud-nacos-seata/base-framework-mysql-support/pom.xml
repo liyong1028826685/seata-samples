@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>1.1.10</version>
         </dependency>
 
@@ -25,7 +25,7 @@
 
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <artifactId>mybatis-plus-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>3.1.1</version>
         </dependency>
 

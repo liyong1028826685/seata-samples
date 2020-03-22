@@ -13,31 +13,25 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package io.seata.samples.saga.action;
-
-import java.math.BigDecimal;
-import java.util.Map;
+package saga.io.seata.action;
 
 /**
- * Balance Actions
+ * Inventory Actions
  */
-public interface BalanceAction {
+public interface InventoryAction {
 
     /**
      * reduce
-     * @param businessKey
-     * @param amount
-     * @param params
+     *
+     * @param count
      * @return
      */
-    boolean reduce(String businessKey, BigDecimal amount, Map<String, Object> params);
+    boolean reduce(String businessKey, int count);
 
     /**
-     * compensateReduce
-     * @param businessKey
-     * @param params
+     * increase
+     *
      * @return
      */
-    boolean compensateReduce(String businessKey, Map<String, Object> params);
-
+    boolean compensateReduce(String businessKey);
 }

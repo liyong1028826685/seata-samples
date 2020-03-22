@@ -257,8 +257,8 @@ init nacos config finished, please start seata-server
 这时候在 Nacos 的服务列表下面可以看到一个名为serverAddr的服务
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190905110455278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9saWRvbmcxNjY1LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
 ## 3 使用seata-spring-boot-starter案例分析
-`seata-spring-boot-starter`是使用springboot自动装配来简化seata-all的复杂配置。1.0.0可用于替换seata-all，`GlobalTransactionScanner`自动初始化（依赖SpringUtils）若其他途径实现`GlobalTransactionScanner`初始化，请保证`io.seata.spring.boot.autoconfigure.util.SpringUtils`先初始化；
-`seata-spring-boot-starter`默认开启数据源自动代理，用户若再手动配置`DataSourceProxy`将会导致异常。
+`seata-spring-boot-saga.io.seata.samples.action.starter`是使用springboot自动装配来简化seata-all的复杂配置。1.0.0可用于替换seata-all，`GlobalTransactionScanner`自动初始化（依赖SpringUtils）若其他途径实现`GlobalTransactionScanner`初始化，请保证`io.seata.spring.boot.autoconfigure.util.SpringUtils`先初始化；
+`seata-spring-boot-saga.io.seata.samples.action.starter`默认开启数据源自动代理，用户若再手动配置`DataSourceProxy`将会导致异常。
 
 
 参考官网中用户购买商品的业务逻辑。整个业务逻辑由4个微服务提供支持：
@@ -583,7 +583,7 @@ SET FOREIGN_KEY_CHECKS=1;
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
+        <artifactId>spring-boot-saga.io.seata.samples.action.starter-parent</artifactId>
         <version>2.2.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
@@ -619,19 +619,19 @@ SET FOREIGN_KEY_CHECKS=1;
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-web</artifactId>
             <version>${springboot.verison}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>${springboot.verison}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-test</artifactId>
             <version>${springboot.verison}</version>
         </dependency>
 
@@ -643,7 +643,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <artifactId>mybatis-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>${mybatis.version}</version>
         </dependency>
 
@@ -666,7 +666,7 @@ SET FOREIGN_KEY_CHECKS=1;
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <artifactId>dubbo-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>${dubbo.version}</version>
         </dependency>
 
@@ -686,7 +686,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
         <dependency>
             <groupId>io.seata</groupId>
-            <artifactId>seata-spring-boot-starter</artifactId>
+            <artifactId>seata-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <version>${seata.version}</version>
         </dependency>
 
@@ -760,8 +760,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 ```
 注意：
-- `seata-spring-boot-starter`: 这个是spring-boot seata 所需的主要依赖，1.0.0版本开始加入支持。
-- `dubbo-spring-boot-starter`:   springboot dubbo的依赖
+- `seata-spring-boot-saga.io.seata.samples.action.starter`: 这个是spring-boot seata 所需的主要依赖，1.0.0版本开始加入支持。
+- `dubbo-spring-boot-saga.io.seata.samples.action.starter`:   springboot dubbo的依赖
 
 其他的就不一一介绍，其他的一目了然，就知道是干什么的。
   
@@ -1184,7 +1184,7 @@ java.lang.RuntimeException: 测试抛异常后，分布式事务回滚！
 
 到这里一个简单的案例基本就分析结束。感谢你的学习。
 
-后期会介绍`seata-spring-boot-starter`的实现原理，敬请期待。
+后期会介绍`seata-spring-boot-saga.io.seata.samples.action.starter`的实现原理，敬请期待。
 
 最后想一起交流技术的可以加我wx:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019091810182996.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9saWRvbmcxNjY1LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)

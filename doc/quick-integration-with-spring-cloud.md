@@ -17,7 +17,7 @@ dependencyManagement {
 
 ```
 dependencies {
-    compile('com.alibaba.cloud:spring-cloud-starter-alibaba-seata')
+    compile('com.alibaba.cloud:spring-cloud-saga.io.seata.samples.action.starter-alibaba-seata')
 }
 ```
 
@@ -43,7 +43,7 @@ dependencies {
 ```xml
 <dependency>
 	<groupId>com.alibaba.cloud</groupId>
-	<artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+	<artifactId>spring-cloud-saga.io.seata.samples.action.starter-alibaba-seata</artifactId>
 </dependency>
 ```
 
@@ -52,7 +52,7 @@ dependencies {
 
 需要注意的是Spring Cloud Alibaba 的毕业版本的 GroupId 是 `com.alibaba.cloud`
 
-`spring-cloud-starter-alibaba-seata`这个依赖中只依赖了`spring-cloud-alibaba-seata`，所以在项目中添加`spring-cloud-starter-alibaba-seata`和`spring-cloud-alibaba-seata`是一样的
+`spring-cloud-saga.io.seata.samples.action.starter-alibaba-seata`这个依赖中只依赖了`spring-cloud-alibaba-seata`，所以在项目中添加`spring-cloud-saga.io.seata.samples.action.starter-alibaba-seata`和`spring-cloud-alibaba-seata`是一样的
 
 ### 2.  添加Seata 配置文件
 

@@ -14,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.util.Assert;
 
 /**
- * The type Local tcc transaction starter.
+ * The type Local tcc transaction saga.io.seata.samples.action.starter.
  *
  * @author zhangsen
  */
@@ -31,12 +31,12 @@ public class LocalTccTransactionStarter {
     static TccTransactionService tccTransactionService = null;
 
     /**
-     * The Tcc action one.
+     * The Tcc saga.io.seata.samples.action one.
      */
     static TccActionOneImpl tccActionOne = null;
 
     /**
-     * The Tcc action two.
+     * The Tcc saga.io.seata.samples.action two.
      */
     static TccActionTwoImpl tccActionTwo = null;
 

@@ -6,7 +6,7 @@ demo中使用的相关版本号，具体请看代码。如果搭建个人demo不
 
 * seata 0.8.0
 * spring-cloud-alibaba-seata 2.1.0.RELEASE
-* spring-cloud-starter-alibaba-nacos-discovery  0.2.1.RELEASE
+* spring-cloud-saga.io.seata.samples.action.starter-alibaba-nacos-discovery  0.2.1.RELEASE
 * springboot 2.0.6.RELEASE
 * springcloud Finchley.RELEASE
 

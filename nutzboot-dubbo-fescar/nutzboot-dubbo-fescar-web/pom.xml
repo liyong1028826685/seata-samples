@@ -10,12 +10,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.nutz</groupId>
-			<artifactId>nutzboot-starter-nutz-mvc</artifactId>
+			<artifactId>nutzboot-saga.io.seata.samples.action.starter-nutz-mvc</artifactId>
 			<version>${nutzboot.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.nutz</groupId>
-			<artifactId>nutzboot-starter-jetty</artifactId>
+			<artifactId>nutzboot-saga.io.seata.samples.action.starter-jetty</artifactId>
 			<version>${nutzboot.version}</version>
 		</dependency>
 		<dependency>

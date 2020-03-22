@@ -5,7 +5,7 @@ import org.apache.curator.test.TestingServer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * The type Dubbo tcc provider starter.
+ * The type Dubbo tcc provider saga.io.seata.samples.action.starter.
  *
  * @author zhangsen
  */

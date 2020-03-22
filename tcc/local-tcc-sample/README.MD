@@ -8,7 +8,7 @@
 
 基于 Seata TCC模式，演示分布式事务的提交和回滚；
 
-本demo中一个分布式事务内会有2个TCC事务参与者，分别是: [TccActionOne](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/action/TccActionOne.java) 和 [TccActionTwo](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/action/TccActionTwo.java) ;分布式事务提交则两者均提交，分布式事务回滚则两者均回滚；
+本demo中一个分布式事务内会有2个TCC事务参与者，分别是: [TccActionOne](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/saga.io.seata.samples.action/TccActionOne.java) 和 [TccActionTwo](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/saga.io.seata.samples.action/TccActionTwo.java) ;分布式事务提交则两者均提交，分布式事务回滚则两者均回滚；
 
 这2个TCC参与者均是 本地bean（非远程RPC服务），本地TCC bean需要在 接口定义中添加 @LocalTCC 注解，其定义如下：
 
@@ -52,6 +52,6 @@ public interface TccActionTwo {
 
 #### step 2 启动 TCC Demo
 
-运行 [LocalTccTransactionStarter](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/starter/LocalTccTransactionStarter.java) , 启动 demo工程；
+运行 [LocalTccTransactionStarter](https://github.com/seata/seata-samples/blob/master/tcc/local-tcc-sample/src/main/java/io/seata/samples/tcc/saga.io.seata.samples.action.starter/LocalTccTransactionStarter.java) , 启动 demo工程；
 
 内含TCC 事务提交场景和TCC事务回滚场景的演示；

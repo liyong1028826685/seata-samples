@@ -13,34 +13,31 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package io.seata.samples.saga;
+package saga.io.seata.action;
 
-import java.io.IOException;
-
-import io.seata.core.store.StoreMode;
-import io.seata.server.Server;
+import java.math.BigDecimal;
+import java.util.Map;
 
 /**
- * Mock a seata server
- *
- * @author zhangsen
+ * Balance Actions
  */
-public class SeataServerStarter {
+public interface BalanceAction {
 
     /**
-     * The Server.
+     * reduce
+     * @param businessKey
+     * @param amount
+     * @param params
+     * @return
      */
-    static Server server = null;
+    boolean reduce(String businessKey, BigDecimal amount, Map<String, Object> params);
 
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
-     * @throws IOException the io exception
+     * compensateReduce
+     * @param businessKey
+     * @param params
+     * @return
      */
-    public static void main(String[] args) throws IOException {
-        server = new Server();
-        server.main(args);
-    }
+    boolean compensateReduce(String businessKey, Map<String, Object> params);
 
 }

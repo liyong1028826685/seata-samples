@@ -59,18 +59,18 @@ public class TccTransactionService {
     }
 
     /**
-     * Sets tcc action one.
+     * Sets tcc saga.io.seata.samples.action one.
      *
-     * @param tccActionOne the tcc action one
+     * @param tccActionOne the tcc saga.io.seata.samples.action one
      */
     public void setTccActionOne(TccActionOne tccActionOne) {
         this.tccActionOne = tccActionOne;
     }
 
     /**
-     * Sets tcc action two.
+     * Sets tcc saga.io.seata.samples.action two.
      *
-     * @param tccActionTwo the tcc action two
+     * @param tccActionTwo the tcc saga.io.seata.samples.action two
      */
     public void setTccActionTwo(TccActionTwo tccActionTwo) {
         this.tccActionTwo = tccActionTwo;

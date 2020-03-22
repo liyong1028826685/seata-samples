@@ -27,9 +27,9 @@
 
     <dubbo:protocol name="dubbo" port="-1"/>
 
-    <dubbo:reference id="inventoryAction" interface="io.seata.samples.saga.action.InventoryAction" check="false" lazy="true"/>
+    <dubbo:reference id="inventoryAction" interface="saga.io.seata.action.InventoryAction" check="false" lazy="true"/>
 
-    <dubbo:reference id="balanceAction" interface="io.seata.samples.saga.action.BalanceAction" check="false" lazy="true"/>
+    <dubbo:reference id="balanceAction" interface="saga.io.seata.action.BalanceAction" check="false" lazy="true"/>
 
 
 </beans>

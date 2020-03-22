@@ -389,11 +389,11 @@ sh seata-server.sh 8091 db
 
 - 修改业务客户端发现注册方式为 zookeeper   
 同Step 7 中[修改 Seata-server 服务注册方式为 zookeeper] 步骤
-- 启动 [DubboAccountServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/starter/DubboAccountServiceStarter.java)
-- 启动 [DubboOrderServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/starter/DubboOrderServiceStarter.java)
-- 启动 [DubboStorageServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/starter/DubboStorageServiceStarter.java)
+- 启动 [DubboAccountServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/saga.io.seata.samples.action.starter/DubboAccountServiceStarter.java)
+- 启动 [DubboOrderServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/saga.io.seata.samples.action.starter/DubboOrderServiceStarter.java)
+- 启动 [DubboStorageServiceStarter](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/saga.io.seata.samples.action.starter/DubboStorageServiceStarter.java)
 
-- 启动 [DubboBusinessTester](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/starter/DubboBusinessTester.java) 进行测试
+- 启动 [DubboBusinessTester](https://github.com/seata/seata-samples/blob/master/ha/src/main/java/io/seata/samples/ha/saga.io.seata.samples.action.starter/DubboBusinessTester.java) 进行测试
 
 **注意:** 在标注 @GlobalTransactional 注解方法内部显示的抛出异常才会进行事务的回滚。整个 Dubbo 服务调用链路只需要在事务最开始发起方的 service 方法标注注解即可。
 

@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-web</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>spring-web</artifactId>
@@ -23,11 +23,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <artifactId>spring-cloud-saga.io.seata.samples.action.starter-sleuth</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -37,15 +37,15 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-data-jpa</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-saga.io.seata.samples.action.starter-openfeign</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>spring-web</artifactId>
@@ -63,7 +63,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-saga.io.seata.samples.action.starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
             <groupId>io.seata</groupId>

@@ -35,10 +35,10 @@
     </properties>
 
     <dependencies>
-        <!-- sofarpc starter -->
+        <!-- sofarpc saga.io.seata.samples.action.starter -->
         <dependency>
             <groupId>com.alipay.sofa</groupId>
-            <artifactId>rpc-sofa-boot-starter</artifactId>
+            <artifactId>rpc-sofa-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
 
         <dependency>

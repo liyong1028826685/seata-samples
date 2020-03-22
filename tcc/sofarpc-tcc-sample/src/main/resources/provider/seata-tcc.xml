@@ -27,9 +27,9 @@
     </bean>
 
 
-    <bean id="tccActionOneImpl" class="io.seata.samples.tcc.sofarpc.action.impl.TccActionOneImpl"/>
+    <bean id="tccActionOneImpl" class="io.seata.samples.tcc.sofarpc.saga.io.seata.impl.TccActionOneImpl"/>
 
-    <bean id="tccActionTwoImpl" class="io.seata.samples.tcc.sofarpc.action.impl.TccActionTwoImpl"/>
+    <bean id="tccActionTwoImpl" class="io.seata.samples.tcc.sofarpc.saga.io.seata.impl.TccActionTwoImpl"/>
 
     <bean id="tccTransactionService" class="io.seata.samples.tcc.sofarpc.service.TccTransactionService"/>
 

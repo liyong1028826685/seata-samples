@@ -31,10 +31,10 @@
     <dubbo:provider timeout="10000"  threads="10" threadpool="fixed" loadbalance="roundrobin"/>
 
     <!-- 第一个TCC 参与者服务发布 -->
-    <dubbo:service interface="io.seata.samples.tcc.transfer.action.FirstTccAction" ref="firstTccActionImpl"/>
+    <dubbo:service interface="io.seata.samples.tcc.transfer.saga.io.seata.samples.action.FirstTccAction" ref="firstTccActionImpl"/>
 
     <!-- 第二个TCC 参与者服务发布 -->
-    <dubbo:service interface="io.seata.samples.tcc.transfer.action.SecondTccAction" ref="secondTccActionImpl"/>
+    <dubbo:service interface="io.seata.samples.tcc.transfer.saga.io.seata.samples.action.SecondTccAction" ref="secondTccActionImpl"/>
 
 
 </beans>

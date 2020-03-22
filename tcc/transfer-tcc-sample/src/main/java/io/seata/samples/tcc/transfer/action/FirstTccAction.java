@@ -15,7 +15,7 @@ public interface FirstTccAction {
      * 一阶段方法
      * 
      * @param businessActionContext  框架会植入相关上下文信息
-     *     [xid:192.168.3.3:8091:2038266211,branch_Id:2038266212,action_name:firstTccAction,action_context:{amount=10.0, action-start-time=1584539981286, sys::prepare=prepareMinus, accountNo=A, sys::rollback=rollback, sys::commit=commit, host-name=192.168.3.3, actionName=firstTccAction}]
+     *     [xid:192.168.3.3:8091:2038266211,branch_Id:2038266212,action_name:firstTccAction,action_context:{amount=10.0, saga.io.seata.samples.action-start-time=1584539981286, sys::prepare=prepareMinus, accountNo=A, sys::rollback=rollback, sys::commit=commit, host-name=192.168.3.3, actionName=firstTccAction}]
      * @param accountNo @BusinessActionContextParameter参数也会被植入到事务上下文中
      * @param amount @BusinessActionContextParameter参数也会被植入到事务上下文中
      */

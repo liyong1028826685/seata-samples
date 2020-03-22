@@ -13,11 +13,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package io.seata.samples.saga.action.impl;
+package saga.io.seata.impl;
 
-import io.seata.samples.saga.action.InventoryAction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import saga.io.seata.action.InventoryAction;
 
 /**
  *

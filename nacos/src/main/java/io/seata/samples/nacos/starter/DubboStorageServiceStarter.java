@@ -21,7 +21,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- * The type Dubbo storage service starter.
+ * The type Dubbo storage service saga.io.seata.samples.action.starter.
  */
 public class DubboStorageServiceStarter {
     /**

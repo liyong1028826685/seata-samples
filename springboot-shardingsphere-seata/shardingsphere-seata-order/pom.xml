@@ -21,12 +21,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
@@ -41,7 +41,7 @@
         <!-- mybatis-plus begin -->
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <artifactId>mybatis-plus-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
         <!-- mybatis-plus end -->
         <dependency>
@@ -52,25 +52,25 @@
 
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <artifactId>sharding-jdbc-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-aop</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <artifactId>dubbo-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <artifactId>spring-cloud-saga.io.seata.samples.action.starter-alibaba-nacos-discovery</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>nacos-client</artifactId>
@@ -101,7 +101,7 @@
 
         <dependency>
             <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <artifactId>nacos-config-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>nacos-client</artifactId>

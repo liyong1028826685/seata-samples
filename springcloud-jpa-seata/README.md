@@ -69,6 +69,6 @@ public class DataSourceConfig {
 
 - file.conf 的 service.vgroup_mapping 配置必须和`spring.application.name`一致
 
-在 `org.springframework.cloud:spring-cloud-starter-alibaba-seata`的`org.springframework.cloud.alibaba.seata.GlobalTransactionAutoConfiguration`类中，默认会使用 `${spring.application.name}-fescar-service-group`作为服务名注册到 Seata Server上，如果和`file.conf`中的配置不一致，会提示 `no available server to connect`错误
+在 `org.springframework.cloud:spring-cloud-saga.io.seata.samples.action.starter-alibaba-seata`的`org.springframework.cloud.alibaba.seata.GlobalTransactionAutoConfiguration`类中，默认会使用 `${spring.application.name}-fescar-service-group`作为服务名注册到 Seata Server上，如果和`file.conf`中的配置不一致，会提示 `no available server to connect`错误
 
 也可以通过配置 `spring.cloud.alibaba.seata.tx-service-group`修改后缀，但是必须和`file.conf`中的配置保持一致

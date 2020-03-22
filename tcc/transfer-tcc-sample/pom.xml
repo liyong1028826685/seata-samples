@@ -30,7 +30,7 @@
 
     <properties>
         <curator.version>4.2.0</curator.version>
-        <dubbo.springboot.starter.version>1.0.0</dubbo.springboot.starter.version>
+        <dubbo.springboot.saga.io.seata.samples.action.starter.version>1.0.0</dubbo.springboot.saga.io.seata.samples.action.starter.version>
         <dubbo.version>2.7.1</dubbo.version>
 
         <commons-dbcp.version>1.3</commons-dbcp.version>

@@ -31,8 +31,8 @@
         <springboot.version>2.0.8.RELEASE</springboot.version>
         <!--<sharding-sphere.version>4.0.0-RC2-SNAPSHOT</sharding-sphere.version>-->
         <sharding-sphere.version>4.0.0-RC2</sharding-sphere.version>
-        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
-        <mybatis-plus-boot-starter.version>2.3.1</mybatis-plus-boot-starter.version>
+        <druid-spring-boot-saga.io.seata.samples.action.starter.version>1.1.10</druid-spring-boot-saga.io.seata.samples.action.starter.version>
+        <mybatis-plus-boot-saga.io.seata.samples.action.starter.version>2.3.1</mybatis-plus-boot-saga.io.seata.samples.action.starter.version>
         <logback.version>1.2.3</logback.version>
     </properties>
 
@@ -40,7 +40,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
+                <artifactId>spring-boot-saga.io.seata.samples.action.starter</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
 
@@ -54,19 +54,19 @@
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
+                <artifactId>spring-boot-saga.io.seata.samples.action.starter-test</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <artifactId>dubbo-spring-boot-saga.io.seata.samples.action.starter</artifactId>
                 <version>${dubbo-boot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <artifactId>spring-cloud-saga.io.seata.samples.action.starter-alibaba-nacos-discovery</artifactId>
                 <version>${nacos.version}</version>
             </dependency>
 
@@ -96,15 +96,15 @@
 
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
-                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <artifactId>nacos-config-spring-boot-saga.io.seata.samples.action.starter</artifactId>
                 <version>${nacos-config-spring-boot.version}</version>
             </dependency>
 
             <!-- mybatis-plus begin -->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus-boot-starter.version}</version>
+                <artifactId>mybatis-plus-boot-saga.io.seata.samples.action.starter</artifactId>
+                <version>${mybatis-plus-boot-saga.io.seata.samples.action.starter.version}</version>
             </dependency>
             <!-- mybatis-plus end -->
             <dependency>
@@ -119,13 +119,13 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
-                <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+                <artifactId>sharding-jdbc-spring-boot-saga.io.seata.samples.action.starter</artifactId>
                 <version>${sharding-sphere.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-spring-boot-starter.version}</version>
+                <artifactId>druid-spring-boot-saga.io.seata.samples.action.starter</artifactId>
+                <version>${druid-spring-boot-saga.io.seata.samples.action.starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -36,7 +36,7 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <artifactId>spring-cloud-saga.io.seata.samples.action.starter-alibaba-nacos-discovery</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>nacos-client</artifactId>
@@ -67,7 +67,7 @@
 
         <dependency>
             <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <artifactId>nacos-config-spring-boot-saga.io.seata.samples.action.starter</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>nacos-client</artifactId>
@@ -78,7 +78,7 @@
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <artifactId>mybatis-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
 
         <dependency>
@@ -94,7 +94,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-saga.io.seata.samples.action.starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

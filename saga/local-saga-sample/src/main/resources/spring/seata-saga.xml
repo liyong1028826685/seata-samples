@@ -58,8 +58,8 @@
     </bean>
 
 
-    <bean id="inventoryAction" class="io.seata.samples.saga.action.impl.InventoryActionImpl"/>
+    <bean id="inventoryAction" class="io.seata.samples.saga.io.seata.impl.InventoryActionImpl"/>
 
-    <bean id="balanceAction" class="io.seata.samples.saga.action.impl.BalanceActionImpl"/>
+    <bean id="balanceAction" class="io.seata.samples.saga.io.seata.impl.BalanceActionImpl"/>
 
 </beans>

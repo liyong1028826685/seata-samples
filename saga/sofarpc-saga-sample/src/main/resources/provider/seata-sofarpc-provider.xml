@@ -20,16 +20,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
             http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd">
 
-    <sofa:service ref="inventoryActionImpl" interface="io.seata.samples.saga.action.InventoryAction">
+    <sofa:service ref="inventoryActionImpl" interface="io.seata.samples.saga.io.seata.action.InventoryAction">
         <sofa:binding.bolt />
     </sofa:service>
 
-    <sofa:service ref="balanceActionImpl" interface="io.seata.samples.saga.action.BalanceAction">
+    <sofa:service ref="balanceActionImpl" interface="io.seata.samples.saga.io.seata.action.BalanceAction">
         <sofa:binding.bolt />
     </sofa:service>
 
-    <bean id="inventoryActionImpl" class="io.seata.samples.saga.action.impl.InventoryActionImpl"/>
+    <bean id="inventoryActionImpl" class="io.seata.samples.saga.io.seata.impl.InventoryActionImpl"/>
 
-    <bean id="balanceActionImpl" class="io.seata.samples.saga.action.impl.BalanceActionImpl"/>
+    <bean id="balanceActionImpl" class="io.seata.samples.saga.io.seata.impl.BalanceActionImpl"/>
 
 </beans>

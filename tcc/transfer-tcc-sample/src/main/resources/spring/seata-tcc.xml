@@ -26,9 +26,9 @@
         <constructor-arg value="my_test_tx_group"/>
     </bean>
 
-    <bean id="firstTccActionImpl" class="io.seata.samples.tcc.transfer.action.impl.FirstTccActionImpl"/>
+    <bean id="firstTccActionImpl" class="io.seata.samples.tcc.transfer.saga.io.seata.impl.FirstTccActionImpl"/>
 
-    <bean id="secondTccActionImpl" class="io.seata.samples.tcc.transfer.action.impl.SecondTccActionImpl"/>
+    <bean id="secondTccActionImpl" class="io.seata.samples.tcc.transfer.saga.io.seata.impl.SecondTccActionImpl"/>
 
     <bean id="transferService" class="io.seata.samples.tcc.transfer.activity.impl.TransferServiceImpl"/>
 

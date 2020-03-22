@@ -20,7 +20,7 @@ import io.seata.samples.nacos.ApplicationKeeper;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * The type Dubbo order service starter.
+ * The type Dubbo order service saga.io.seata.samples.action.starter.
  */
 public class DubboOrderServiceStarter {
     /**

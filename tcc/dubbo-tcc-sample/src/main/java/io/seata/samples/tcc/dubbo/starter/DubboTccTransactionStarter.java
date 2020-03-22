@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.util.Assert;
 
 /**
- * The type Dubbo tcc transaction starter.
+ * The type Dubbo tcc transaction saga.io.seata.samples.action.starter.
  *
  * @author zhangsen
  */

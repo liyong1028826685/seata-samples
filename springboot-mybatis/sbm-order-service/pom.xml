@@ -21,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <artifactId>mybatis-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid-spring-boot-saga.io.seata.samples.action.starter</artifactId>
         </dependency>
     </dependencies>
 

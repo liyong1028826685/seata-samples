@@ -7,7 +7,7 @@ import io.seata.samples.tcc.dubbo.action.ResultHolder;
 import io.seata.samples.tcc.dubbo.action.TccActionTwo;
 
 /**
- * The type Tcc action two.
+ * The type Tcc saga.io.seata.samples.action two.
  *
  * @author zhangsen
  */

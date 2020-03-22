@@ -5,7 +5,7 @@ import io.seata.samples.tcc.action.ResultHolder;
 import io.seata.samples.tcc.action.TccActionOne;
 
 /**
- * The type Tcc action one.
+ * The type Tcc saga.io.seata.samples.action one.
  *
  * @author zhangsen
  */

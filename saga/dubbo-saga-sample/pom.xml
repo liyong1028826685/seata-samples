@@ -24,12 +24,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>dubbo-saga-sample</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>dubbo-saga-sample ${project.version}</name>
+    <modules>
+        <module>dubbo-provider</module>
+        <module>dubbo-comsumer</module>
+        <module>dubbo-api</module>
+    </modules>
 
     <properties>
         <curator.version>4.2.0</curator.version>
-        <dubbo.springboot.starter.version>1.0.0</dubbo.springboot.starter.version>
+        <dubbo.springboot.saga.io.seata.samples.action.starter.version>1.0.0</dubbo.springboot.saga.io.seata.samples.action.starter.version>
         <dubbo.version>2.7.1</dubbo.version>
     </properties>
 

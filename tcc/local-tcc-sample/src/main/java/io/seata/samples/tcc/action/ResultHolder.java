@@ -15,7 +15,7 @@ public class ResultHolder {
     private static Map<String, String> actionTwoResults = new ConcurrentHashMap<String, String>();
 
     /**
-     * Set action one result.
+     * Set saga.io.seata.samples.action one result.
      *
      * @param txId   the tx id
      * @param result the result
@@ -25,7 +25,7 @@ public class ResultHolder {
     }
 
     /**
-     * Get action one result string.
+     * Get saga.io.seata.samples.action one result string.
      *
      * @param txId the tx id
      * @return the string
@@ -35,7 +35,7 @@ public class ResultHolder {
     }
 
     /**
-     * Set action two result.
+     * Set saga.io.seata.samples.action two result.
      *
      * @param txId   the tx id
      * @param result the result
@@ -45,7 +45,7 @@ public class ResultHolder {
     }
 
     /**
-     * Get action two result string.
+     * Get saga.io.seata.samples.action two result string.
      *
      * @param txId the tx id
      * @return the string

@@ -4,7 +4,7 @@ import io.seata.rm.tcc.api.BusinessActionContext;
 import io.seata.rm.tcc.api.TwoPhaseBusinessAction;
 
 /**
- * The interface Tcc action one.
+ * The interface Tcc saga.io.seata.samples.action one.
  *
  * @author zhangsen
  */
@@ -13,7 +13,7 @@ public interface TccActionOne {
     /**
      * Prepare boolean.
      *
-     * @param actionContext the action context
+     * @param actionContext the saga.io.seata.samples.action context
      * @param a             the a
      * @return the boolean
      */
@@ -23,7 +23,7 @@ public interface TccActionOne {
     /**
      * Commit boolean.
      *
-     * @param actionContext the action context
+     * @param actionContext the saga.io.seata.samples.action context
      * @return the boolean
      */
     public boolean commit(BusinessActionContext actionContext);
@@ -31,7 +31,7 @@ public interface TccActionOne {
     /**
      * Rollback boolean.
      *
-     * @param actionContext the action context
+     * @param actionContext the saga.io.seata.samples.action context
      * @return the boolean
      */
     public boolean rollback(BusinessActionContext actionContext);
