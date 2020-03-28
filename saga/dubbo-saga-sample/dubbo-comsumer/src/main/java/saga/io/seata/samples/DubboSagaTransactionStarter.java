@@ -28,6 +28,9 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
+import static io.seata.saga.statelang.domain.DomainConstants.VAR_NAME_STATEMACHINE_ERROR_CODE;
+import static io.seata.saga.statelang.domain.DomainConstants.VAR_NAME_STATEMACHINE_ERROR_MSG;
+
 /**
  *
  */
@@ -39,7 +42,7 @@ public class DubboSagaTransactionStarter {
 
         StateMachineEngine stateMachineEngine = (StateMachineEngine) applicationContext.getBean("stateMachineEngine");
 
-        transactionCommittedDemo(stateMachineEngine);
+       // transactionCommittedDemo(stateMachineEngine);
 
        // transactionCompensatedDemo(stateMachineEngine);
 
@@ -80,6 +83,8 @@ public class DubboSagaTransactionStarter {
 
         //sync test
         StateMachineInstance inst = stateMachineEngine.startWithBusinessKey("reduceInventoryAndBalance", null, businessKey, startParams);
+
+        System.out.print("StateMachineInstance=>"+inst.getContext().get("code="+VAR_NAME_STATEMACHINE_ERROR_CODE)+",message="+ inst.getContext().get(VAR_NAME_STATEMACHINE_ERROR_MSG));
 
         //async test
         businessKey = String.valueOf(System.currentTimeMillis());
